@@ -13,6 +13,7 @@ RUN set -ex && \
     git \
     unzip \
     libzip-dev \
+    libpq \
     zlib-dev && \
     apk add postgresql-dev=9.6.10-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.5/main && \
     apk add --no-cache --virtual .build-deps \
